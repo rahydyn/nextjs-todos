@@ -13,13 +13,16 @@ export default function Auth() {
 
   const login = async () => {
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_RESTAPI_URL}api/auth/jwt/create/`, {
-        method: "POST",
-        body: JSON.stringify({ username: username, password: password }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
+      await fetch(
+        `${process.env.NEXT_PUBLIC_RESTAPI_URL}api/auth/jwt/create/`,
+        {
+          method: "POST",
+          body: JSON.stringify({ username: username, password: password }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      )
         .then((res) => {
           if (res.status === 400) {
             throw "authentification failed";
@@ -67,12 +70,12 @@ export default function Auth() {
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            className="mx-auto h-12 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+            className="mx-auto h-6 w-auto"
+            src="/header_logo.png"
             alt="Your Company"
           />
           <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-white">
-            {isLogin ? "Login" : "Sign up"}
+            {isLogin ? "Admin Login" : "Admin Sign up"}
           </h2>
           {/* <p className="mt-2 text-center text-sm text-gray-600">
             Or{" "}

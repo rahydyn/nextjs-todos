@@ -12,6 +12,8 @@
     "@heroicons/react": "^2.0.11",
     "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.12",
+    "fs": "^0.0.1-security",
+    "fs.promises": "^0.1.2",
     "next": "12.3.1",
     "node-fetch": "^3.2.10",
     "postcss": "^8.4.16",

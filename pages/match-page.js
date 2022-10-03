@@ -7,6 +7,8 @@ import { useEffect } from "react";
 import StateContextProvider from "../context/StateContext";
 import TaskForm from "../components/TaskForm";
 
+// ISR + CSR
+
 const fetcher = (url) => fetch(url).then((res) => res.json());
 const apiUrl = `${process.env.NEXT_PUBLIC_RESTAPI_URL}api/list-task/`;
 

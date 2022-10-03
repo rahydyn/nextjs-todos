@@ -10,7 +10,7 @@ export default function Layout({ children, title = "Default title" }) {
         {children}
       </main>
       <footer className="w-full h6 flex justify-center items-center text-gray-500 text-sm">
-        &copy;Tsunagaru, Inc.
+        <a href="https://www.tsunagaru.co.jp/">&copy;Tsunagaru, Inc.</a>
       </footer>
     </div>
   );

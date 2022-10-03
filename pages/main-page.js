@@ -14,14 +14,14 @@ export default function MainPage() {
   return (
     <Layout title="Main page">
       <div className="mb-10">
-        <Link href="/blog-page">
+        <Link href="/regist-page">
           <a className="bg-indigo-500 mr-8 hover:bg-indigo-600 text-white px-4 py-12 rounded">
-            Visit Blog by SSG + ISR
+            Regist Google Form Data
           </a>
         </Link>
-        <Link href="/task-page">
+        <Link href="/match-page">
           <a className="bg-gray-500 mr-8 hover:bg-gray-600 text-white px-4 py-12 rounded">
-            Visit Task by ISR + CSR
+            Match Atenndee by Data
           </a>
         </Link>
 
